@@ -28,18 +28,42 @@ public class Hero {
         dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
+    /**
+     * privateでカプセル化されたフィールド変数の値を参照するためのメソッド。
+     * String型のnameを受け取る。
+     * @return name 
+     */
     public String getName(){
         return name;
     } 
+    /**
+     * privateでカプセル化されたフィールド変数の値を参照するためのメソッド。
+     * int型のhitPointを受け取る。
+     * @return hitPoint 
+     */
     public int getHitPoint(){
         return hitPoint;
     }
+    /**
+     * privateでカプセル化されたフィールド変数の値を参照するためのメソッド。
+     * int型のattackを受け取る。
+     * @return attack 
+     */
     public int getAttack(){
         return attack;
     }
+    /**
+     * privateでカプセル化されたフィールド変数の値を参照するためのメソッド。
+     * boolean型のdeadを受け取る。
+     * @return dead
+     */
     public boolean isDead(){
         return dead;
     }
+    /**
+     * privateでカプセル化されたフィールド変数に値を設定するためのメソッド。
+     * @param dead privateになっているboolean型のパラメータ
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }
